@@ -1,3 +1,6 @@
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 # 🌟 Mini Frontend Projects
 
 Welcome to **Mini Frontend Projects** 🚀  
