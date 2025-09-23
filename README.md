@@ -1,7 +1,7 @@
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# 🌟 Mini Frontend Projects
+# 🌟 Frontend-Projects-for-Beginners
 
 Welcome to **Frontend-Projects-for-Beginners** 🚀  
 A collection of beginner-friendly projects built using **HTML, CSS, and JavaScript**.  
