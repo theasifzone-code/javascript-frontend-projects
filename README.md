@@ -3,7 +3,7 @@
 
 # 🌟 Mini Frontend Projects
 
-Welcome to **Mini Frontend Projects** 🚀  
+Welcome to **Frontend-Projects-for-Beginners** 🚀  
 A collection of beginner-friendly projects built using **HTML, CSS, and JavaScript**.  
 Perfect for learning, practicing, and contributing to open source 🤝
 
@@ -22,4 +22,4 @@ Each project has its own folder with `index.html`, `style.css`, and `script.js`.
 
 ## 🚀 Getting Started
 1. Clone this repository:
-   git clone https://github.com/theasifzone-code/Mini-Frontend-Projects.git
+   git clone https://github.com/theasifzone-code/Frontend-Projects-for-Beginners.git
