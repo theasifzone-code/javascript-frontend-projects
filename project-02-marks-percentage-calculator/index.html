@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+ <div class="container">
+  <form id="gradeForm">
+    <h3 class="main-heading">Student Marks & Percentage Calculator</h3>
+<p class="para"><span class="spn">Enter your marks below to see your grade</span></p>
+
+    <label>English:</label>
+    <input type="number" id="eng" max="100" min="0"><br><br>
+
+    <label>Urdu:</label>
+    <input type="number" id="urdu" max="100" min="0"><br><br>
+
+    <label>Math:</label>
+    <input type="number" id="math" max="100" min="0"><br><br>
+
+    <label>Physics:</label>
+    <input type="number" id="phy" max="100" min="0"><br><br>
+
+    <label>Computer:</label>
+    <input type="number" id="comp" max="100" min="0"><br><br>
+
+    <button type="button" onclick="calculateGrade()">Submit & View Result</button>
+  </form>
+  <h3 id="result"></h3>
+</div>
+  <!-- <form >
+    <input type="text" id="user">
+  </form> -->
+  <script src="script.js"></script>
+</body>
+</html>
