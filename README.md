@@ -3,20 +3,8 @@
 
 # 🌟 JavaScript-Frontend-Projects
 
-Welcome to **Mini Frontend Projects** 🚀
+Welcome to **JavaScript-Frontend-Projects** 🚀
 A collection of beginner-friendly projects built using **HTML, CSS, and JavaScript**.
-=================================================================================
-
-Welcome to **JavaScript-Frontend-Projects** 🚀A collection of beginner-friendly projects built using **HTML, CSS, and JavaScript**.
-
->>>>>>> 57ff34de6b935e7c68876249192d4135e38b629e
->>>>>>> Perfect for learning, practicing, and contributing to open source 🤝
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
 
 ---
 
