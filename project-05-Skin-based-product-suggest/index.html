@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Skin Scanner </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Skin Scanner</h1>
+  </header>
+  <div class="hero">
+    <h2>Your Personalised Skin Routine, Powered by AI</h2>
+    <p>Let us analyse your selfie using advanced AI technology and suggest the right skincare products and bundles for you — based on your actual skin needs.</p>
+  </div>
+  <div class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Upload or capture a photo of your face.</li>
+      <li>Our AI scans for skin concerns like acne, pigmentation, dullness, and sun damage.</li>
+      <li>Get accurate product and bundle recommendations tailored to you.</li>
+    </ol>
+  </div>
+  <div class="scanner">
+    <video id="camera" autoplay muted playsinline style="display:none;"></video>
+    <img id="preview" alt="Preview" style="display:none;" />
+    <input type="file" id="imageUpload" accept="image/*">
+    <br>
+    <button onclick="openCamera()">Use Camera</button>
+    <button onclick="capturePhoto()" disabled id="captureBtn">Capture Photo</button>
+    <button onclick="analyzeSkin()" disabled id="analyzeBtn">Analyze Skin</button>
+    <p id="statusMessage">Please upload or capture a photo to begin.</p>
+  </div>
+  <div id="recommendationSection" class="recommendations" style="display:none;">
+    <h2>Your Skin-Based Recommendations</h2>
+    <div id="result"></div>
+  </div>
+  <footer>
+    <p>&copy; 2025  All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
