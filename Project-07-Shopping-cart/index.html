@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Calculator</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/1.jpg" type="image/x-icon">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- font awesome -->
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Shopping Calculator</h1>
+
+    <form id="shoppingForm">
+      <div class="input-group">
+        <i class="fas fa-box"></i>
+        <input type="text" id="productName" placeholder="Enter Product Name" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-dollar-sign"></i>
+        <input type="number" id="productPrice" placeholder="Enter Product Price" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-sort-numeric-up"></i>
+        <input type="number" id="productQty" placeholder="Enter Quantity" required />
+      </div>
+
+      <button type="submit" id="btn"><i class="fas fa-plus-circle"></i> Add Product</button>
+    </form>
+
+    <div class="output">
+      <h2>Shopping Summary</h2>
+      <p><strong>Subtotal:</strong> <span id="subtotal">0</span> PKR</p>
+      <p><strong>Tax (15%):</strong> <span id="tax">0</span> PKR</p>
+      <p><strong>Total:</strong> <span id="total">0</span> PKR</p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

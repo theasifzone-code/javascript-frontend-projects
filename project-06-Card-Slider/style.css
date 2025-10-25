@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(green, #CCCBFF,blue);
+}
+.wrapper {
+  max-width: 1100px;
+  padding: 20px 10px;
+  margin: 0 60px 35px;
+  overflow: hidden;
+}
+.wrapper .card {
+  background: #fff;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.wrapper .card:hover {
+  transform: translateY(-10px);
+}
+.card .card-image {
+  position: relative;
+}
+.card .card-image img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 22px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+.card .card-image .card-tag {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 0.75rem;
+  color: #6366f1;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+.card .card-content .card-title {
+  color: #111111;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.card .card-content .card-text {
+  color: #747474;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.card .card-footer {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.card .card-footer .card-profile {
+  display: flex;
+  align-items: center;
+}
+.card .card-profile .card-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.card .card-profile .card-profile-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #202020;
+}
+.card .card-profile .card-profile-role {
+  font-size: 0.8rem;
+  color: #7A7A7A;
+}
+.card .card-profile img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card .card-button {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.81rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+.card .card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+}
+.wrapper .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  background: #B1B3F8;
+}
+.wrapper .swiper-pagination-bullet-active {
+  background: #a4a7fd;
+}
+/* Auto-play loading indicator */
+.wrapper .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #6366f1;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: autoplay-loading 5s linear forwards;
+}
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+@keyframes autoplay-loading {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.wrapper :where(.swiper-button-prev, .swiper-button-next) {
+  color: #6366f1;
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+.wrapper :where(.swiper-button-prev, .swiper-button-next):hover {
+  color: #8b5cf6;
+}
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 10px 25px;
+  }
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}

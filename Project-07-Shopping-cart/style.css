@@ -1,0 +1,117 @@
+/* Basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+h1 i {
+  color: #2980b9;
+  margin-right: 8px;
+}
+
+/* Input fields with icons */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.input-group i {
+  color: #2980b9;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.input-group:focus-within {
+  border-color: #2980b9;
+  box-shadow: 0 0 6px rgba(41, 128, 185, 0.4);
+}
+
+/* Button */
+button {
+  width: 100%;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1f6391;
+  transform: translateY(-2px);
+}
+
+/* Output summary */
+.output {
+  margin-top: 2rem;
+  text-align: left;
+  background: #f8faff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #dce7f9;
+}
+
+.output h2 {
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.output p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.output span {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
